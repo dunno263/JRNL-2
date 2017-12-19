@@ -20,6 +20,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var testButton: UIButton!
     
     @IBAction func testAction(_ sender: UIButton) {
+        testTextField.text = "blub"
     }
     
     override func viewDidLoad() {
