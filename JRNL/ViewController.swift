@@ -10,6 +10,18 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    //MARK: Properties
+    
+    @IBOutlet weak var TestLabel: UILabel!
+    @IBOutlet weak var testTextField: UITextField!
+    
+    //MARK: Actions
+    
+    @IBOutlet weak var testButton: UIButton!
+    
+    @IBAction func testAction(_ sender: UIButton) {
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
