@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITextFieldDelegate, UICollectionViewDelegate {
+class ViewController: UIViewController, UITextFieldDelegate, UICollectionViewDelegate, UICollectionViewDataSource {
 
     //MARK: Properties
     
@@ -29,8 +29,11 @@ class ViewController: UIViewController, UITextFieldDelegate, UICollectionViewDel
         
         testTextField.delegate = self
         colViewCalender.delegate = self
+        colViewCalender.dataSource = self
         
         var bla: UICollectionViewDataSource
+        
+        
         
     }
 
@@ -50,7 +53,14 @@ class ViewController: UIViewController, UITextFieldDelegate, UICollectionViewDel
     func textFieldDidEndEditing(_ textField: UITextField) {
         TestLabel.text = textField.text
     }
-
+    
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 2
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 3
+    }
     
 }
 
