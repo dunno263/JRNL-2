@@ -29,11 +29,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UICollectionViewDel
         
         testTextField.delegate = self
         colViewCalender.delegate = self
-        colViewCalender.dataSource = self
-        
-        var bla: UICollectionViewDataSource
-        
-        
+        colViewCalender.dataSource = self   
         
     }
 
