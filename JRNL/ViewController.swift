@@ -59,7 +59,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UICollectionViewDel
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 3
+        return section+3
     }
     
 }
